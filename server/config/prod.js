@@ -1,5 +1,4 @@
-//deploy 한뒤에 product한 상태에서 개발할 경우
 module.exports={
-    mongo : process.env.MONGO_URI
-    //해로프라는 사이트에서 지정한 키값(MONGO_URI)의 값을 가져온다.
+    //헤로쿠에서 정한 키값을 설정해준다(해로쿠에서 데이터베이스 URI를 해당 키값으로 가지고 있다.)
+    mongoDBURI : process.env.MONGO_URI
 }
