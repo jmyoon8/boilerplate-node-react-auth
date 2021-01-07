@@ -64,7 +64,8 @@ userRouter.get('/auth',auth,(req,res)=>{
     })
 })
 
-userRouter.post('/logOut', auth, (req,res)=>{
+userRouter.get('/logOut', auth, (req,res)=>{
+    
     //auth을 통해 인증이 완료되면 req객체에 user변수에 로그인된 회원의 정보가 들어있다.
     User.findOneAndUpdate({_id:req.user._id},{token:""},(err,user)=>{
         if(err) return res.json({success: false, err});

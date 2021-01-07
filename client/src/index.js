@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 
 import 'antd/dist/antd.css'
@@ -24,9 +24,7 @@ ReactDOM.render(
     window.__REDUX_DEVTOOLS_EXTENSION__&&
     window.__REDUX_DEVTOOLS_EXTENSION__()
   )}>
-    <React.StrictMode>
       <App />
-    </React.StrictMode>
   </Provider>,
   document.getElementById('root')
 );

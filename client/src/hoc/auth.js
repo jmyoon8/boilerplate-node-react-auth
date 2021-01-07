@@ -25,7 +25,6 @@ export default function (SpecificComponent, option, adminRoute=null){
 
             dispatch(auth()).then(response=>{
                 // console.log(response)
-                console.log(response)
                 //로그인안한 상태
                 
                 if(!response.payload.isAuth){
