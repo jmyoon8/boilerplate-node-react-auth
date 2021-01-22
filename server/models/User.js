@@ -123,6 +123,7 @@ userSchema.statics.modifyUser=function(token,modifyInfo,cb){
 ///////////////////////////////////////////////////////////
 
 //유저 탈퇴////////////////////////////////////////////////
+//userSchema.function.펑션 명 은 인스턴스 선언시에만 사용가능
 userSchema.statics.deleteUser=function(token,cb){
     
     let user =this;
